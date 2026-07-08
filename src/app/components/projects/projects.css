@@ -1,0 +1,23 @@
+.coming-soon {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.coming-soon i {
+    font-size: 6rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.coming-soon h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.coming-soon p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    color: #bdbdbd;
+    line-height: 1.7;
+}
