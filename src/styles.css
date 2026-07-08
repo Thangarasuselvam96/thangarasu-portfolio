@@ -374,6 +374,9 @@ section {
   margin-top: 40px;
   font-size: 16px;
 }
+section {
+    scroll-margin-top: 90px;
+}
 @media(max-width:1285px) {
   #menu-icon {
     display: block;
@@ -428,4 +431,155 @@ section {
   .contact form {
     flex-direction: column;
   }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 2rem 6%;
+  }
+
+  section {
+    padding: 8rem 6% 5rem;
+    min-height: auto;
+  }
+
+  .heading {
+    font-size: 5rem;
+    margin: 3rem 0;
+  }
+
+  /* HOME */
+
+  .home {
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .home-content h3 {
+    font-size: 2.8rem;
+  }
+
+  .home-content p {
+    font-size: 1.6rem;
+  }
+
+  .home-img img {
+    width: 75vw;
+    max-width: 320px;
+  }
+
+  .social-icons a {
+    font-size: 2.5rem;
+    padding: 0.8rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ABOUT */
+
+  .about {
+    gap: 4rem;
+  }
+
+  .about-content h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .about-content p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 75vw;
+    max-width: 320px;
+  }
+
+  /* SERVICES */
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .service-box {
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .service-info {
+    padding: 1rem;
+  }
+
+  .service-info h4 {
+    font-size: 3rem;
+  }
+
+  .service-info p {
+    font-size: 1.6rem;
+  }
+
+  .service-info i {
+    font-size: 6rem;
+  }
+
+  /* PROJECTS */
+
+  .projects-box {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* CONTACT */
+
+  .contact form {
+    gap: 1rem;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .input-box {
+    width: 100%;
+  }
+
+  .input-box input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  /* FOOTER */
+
+  .footer ul li {
+    display: block;
+    margin: 1rem 0;
+  }
+
 }
