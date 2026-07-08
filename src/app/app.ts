@@ -7,10 +7,11 @@ import { Services } from './components/services/services';
 import { Projects } from './components/projects/projects';
 import { Contact } from './components/contact/contact';
 import { Footer } from './components/footer/footer';
+import { Skills } from './components/skills/skills';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Home, About, Services, Projects, Contact, Footer
+  imports: [RouterOutlet, Header, Home, About, Skills, Services, Projects, Contact, Footer
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

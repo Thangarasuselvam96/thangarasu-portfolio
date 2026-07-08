@@ -12,12 +12,11 @@
   </i>
 
   <nav class="navbar" [class.active]="menuOpen">
-    <a href="#home" (click)="menuOpen = false">Home</a>
-    <a href="#about" (click)="menuOpen = false">About</a>
-    <a href="#services" (click)="menuOpen = false">Services</a>
-    <a href="#projects" (click)="menuOpen = false">Projects</a>
-    <a href="#contact" (click)="menuOpen = false">Contact</a>
+    <a (click)="scrollTo('home')">Home</a>
+    <a (click)="scrollTo('about')">About</a>
+    <a (click)="scrollTo('services')">Services</a>
+    <a (click)="scrollTo('projects')">Projects</a>
   </nav>
 
-  <button class="gradient-btn">Contact Me</button>
+  <button (click)="scrollTo('contact')" class="gradient-btn">Contact Me</button>
 </header>

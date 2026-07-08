@@ -1,0 +1,32 @@
+.about-intro {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin: 2rem 0 3rem;
+}
+
+.about-highlights {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.highlight i {
+    font-size: 3.2rem;
+    color: var(--main-color);
+}
+
+.highlight h4 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.highlight p {
+    font-size: 1.5rem;
+    opacity: .85;
+}

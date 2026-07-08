@@ -1,21 +1,61 @@
 .navbar {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 70%;
-  max-width: 320px;
-  padding: 2rem;
-  background: rgba(0,0,0,.95);
-
-  transform: translateX(100%);
-  opacity: 0;
-  visibility: hidden;
-
-  transition: .3s ease;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 
-.navbar.active {
-  transform: translateX(0);
-  opacity: 1;
-  visibility: visible;
+.navbar a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+@media (max-width: 1285px) {
+
+  #menu-icon {
+    display: block;
+  }
+
+  .gradient-btn {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 70%;
+    max-width: 320px;
+    padding: 2rem;
+
+    background: rgba(0,0,0,.95);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .3s ease;
+  }
+
+  .navbar.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar a {
+    margin: 1.5rem 0;
+    font-size: 2rem;
+  }
 }
